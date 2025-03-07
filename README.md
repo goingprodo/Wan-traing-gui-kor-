@@ -15,7 +15,7 @@
 python3.12 -m venv venv
 ```
 
-2.torch-cuda version
+2. torch-cuda version
 ```
 pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
 ```
@@ -25,7 +25,7 @@ pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https
 pip install -r requirements.txt
 ```
 
-4.flaxh-attn
+4. flaxh-attn
 ```
 pip install flash-attn==2.7.3 --no-build-isolation
 ```
