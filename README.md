@@ -9,22 +9,18 @@
 <br>
 
 ## 의존성 설치
-<br>
 1. make venv
 ```
 python3.12 -m venv venv
 ```
-<br>
 2. torch-cuda version
 ```
 pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
 ```
-<br>
 3. 핵심의존성 설치
 ```
 pip install -r requirements.txt
 ```
-<br>
 4. flaxh-attn
 ```
 pip install flash-attn==2.7.3 --no-build-isolation
@@ -41,6 +37,8 @@ https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/tree/main, 해당 링크에서 깃
 ./run.sh
 ```
 <br>
+
+# 하기의 세팅은 원래 레포에서의 설명입니다!
 
 # diffusion-pipe
 A pipeline parallel training script for diffusion models.
