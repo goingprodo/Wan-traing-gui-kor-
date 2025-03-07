@@ -1,45 +1,46 @@
 # Wan-traing-gui-kor
 완모델에 대한 로라 학습만을 위해서 세팅했습니다.
-
+<br>
 
 ## 반드시 알아야 하는 주의 사항
-1. <br>이 프로그램은 윈도우에서 세팅할 수 없습니다.</br> 만약에 윈도우에서 세팅한다면 wls2를 설정하여 세팅하시기 바랍니다
+1. 이 프로그램은 윈도우에서 세팅할 수 없습니다. 만약에 윈도우에서 세팅한다면 wls2를 설정하여 세팅하시기 바랍니다
 2. 해당 프로그램을 설치하기 전에, 쿠다 12.4를 맞춰주시기 바랍니다.
 3. cudnn은 성능을 위해 필수적입니다. 윈도우 10을 쓰신다면 반드시 설치하시기 바랍니다.
-
+<br>
 
 ## 의존성 설치
-
+<br>
 1. make venv
 ```
 python3.12 -m venv venv
 ```
-
+<br>
 2. torch-cuda version
 ```
 pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
 ```
-
+<br>
 3. 핵심의존성 설치
 ```
 pip install -r requirements.txt
 ```
-
+<br>
 4. flaxh-attn
 ```
 pip install flash-attn==2.7.3 --no-build-isolation
 ```
+<br>
 
 ### 모델
 https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/tree/main, 해당 링크에서 깃클론하시어 모델을 세팅하시길 바랍니다. 절대경로를 수정하여 모델을 불러올 수 있으니, 원하시는 경로에 모델을 위치시키시길 바랍니다.
-
+<br>
 
 ## 실행
 설치가 완료된 이후에는 run.sh를 실행시키면 됩니다.
 ```
 ./run.sh
 ```
-
+<br>
 
 # diffusion-pipe
 A pipeline parallel training script for diffusion models.
