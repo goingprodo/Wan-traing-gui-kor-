@@ -30,6 +30,9 @@ pip install -r requirements.txt
 pip install flash-attn==2.7.3 --no-build-isolation
 ```
 
+### 모델
+https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B/tree/main, 해당 링크에서 깃클론하시어 모델을 세팅하시길 바랍니다. 절대경로를 수정하여 모델을 불러올 수 있으니, 원하시는 경로에 모델을 위치시키시길 바랍니다.
+
 
 ## 실행
 설치가 완료된 이후에는 run.sh를 실행시키면 됩니다.
